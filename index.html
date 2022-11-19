@@ -8,68 +8,86 @@
 
     <script src="https://kit.fontawesome.com/ce3936ba7a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
     <div class = "container">
-        <div class = "outer-panel text-center rounded">
-            <div class = "inner-panel rounded">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h6 class="mt-3"> Space Pig Email</h6>
-                        <p>Welcome!</p>
-                    </div>
-                    <div class="col-md-12">
-                        <img src="images\space pig.png" alt = "Image" style = "width:20%;">
-                    </div>
-
-                    <div class="col-md-12">
-                        <p>
-                            Sending your messages across the galaxy...
-                        </p>
-                        <button type="button" class="btn btn-warning">
-                            Shoot a Star
-                        </button>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="p-4">
-                            <i class="fa-solid fa-inbox"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="p-4">
-                            <h6>Responsive Design</h6>
-                            <p>Hi</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <div class="px-4">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="px-4">
-                            <h6>Design</h6>
-                            <p>Hello</p>
-                        </div>
-                    </div>
-                    <div class="col-md-12 p-4">
-                        <h6>Have any questions?</h6>
-                        <a href="#" style="font-size:13px;text-decoration:none;color: #0A1594;">soraya.boza.cohort2211@gmail.com</a>
-                    </div>
-                </div>
+        <div class = "outer-panel1 text-center rounded">
+            <h6 id = "spacepig" > Space Pig Email </h6>
+            <p id = "spacepig-large" class="hidden-mobile" >Welcome!</p>
+            <img src="images/space pig lite thick.png" alt="Space Pig" style = "width:70%; padding: 10px;">
+            <p id = "spacepig-large" class="hidden-mobile" >Sending your messages across the galaxy...</p>
+            <div class = "inner-panel1 rounded" id = "inbox">
+                Inbox
             </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <footer style="padding:3% 19%">
-                        <div class="d-flex flex-row px-4">
-                        </div>
-                    </footer>
+            <div class = "inner-panel1 rounded">
+                Drafts
+            </div>
+            <div class = "inner-panel1 rounded">
+                Sent
+            </div>
+            <div class = "inner-panel1 rounded">
+                Deleted
+            </div>
+        </div>
+        <div class = "outer-panel2 text-center rounded">
+            <div class="row rounded">
+                <i class="fa-solid fa-magnifying-glass"> Search </i>
+            </div>
+            <div tabindex=1>
+                <BUTTON ONCLICK="ShowAndHide1()" class = "inner-panel2 rounded">
+                    <h5><strong>FROM: </strong>GLOB GORDY</h5>
+                    <h6><strong>SUBJECT: </strong>laser blaser</h6>
+                    <p>You left your laser blaster at my place, want me to come drop it off? Btw, you need to stop leaving your stuff here! It...</p>
+                </BUTTON>
+            </div>
+            <div tabindex=1>
+                    <BUTTON ONCLICK="ShowAndHide2()" class = "inner-panel2 rounded">
+                    <h5><strong>FROM: </strong>Tentacle Terry</h5>
+                    <h6><strong>SUBJECT: </strong>cancelling picnic</h6>
+                    <p>im cancelling our picnic trip on the moon after what you did to me, you wretched, awful, disgusting, evil, putrid, ugl...</p>
+                </BUTTON>
+            </div>
+            <div tabindex=1>
+                    <BUTTON ONCLICK="ShowAndHide3()" class = "inner-panel2 rounded">
+                    <h5><strong>FROM: </strong>Hannah</h5>
+                    <h6><strong>SUBJECT: </strong>Coffee :)</h6>
+                    <p>Heyyyy! I'm stopping by Mars this weekend and was wondering if you wanted to grab some coffee at Martian Coffe...</p>
+                </BUTTON>
+            </div>
+            <div tabindex=1>
+                    <BUTTON ONCLICK="ShowAndHide4()" class = "inner-panel2 rounded">
+                    <h5><strong>FROM: </strong>Space Pig Weaponry</h5>
+                    <h6><strong>SUBJECT: </strong>Laser Blaster Damages Expenses (FINAL WARNING)</h6>
+                    <p>Dear Valued Customer, This is your final warning. If you don't pay your Space Pig Damage Fees, we'll be forced to...</p>
+                </BUTTON>
+            </div>
+        </div>
+        <div class = "outer-panel3 text-center rounded, col-sm-7">
+            <div class = "inner-panel3 rounded">
+                <div ID="Email-1" STYLE="display:none">
+                    <h5><strong>FROM: </strong>GLOB GORDY</h5>
+                    <h6><strong>SUBJECT: </strong>laser blaser</h6>
+                    <p>You left your laser blaster at my place, want me to come drop it off? Btw, you need to stop leaving your stuff here! It's going to
+                        get me in trouble. Space Pig Officials keep showing up at my house! This is not ok!!!</p>
+                </div>
+                <div ID="Email-2" STYLE="display:none">
+                    <h5><strong>FROM: </strong>Tentacle Terry</h5>
+                    <h6><strong>SUBJECT: </strong>cancelling picnic</h6>
+                    <p>im cancelling our picnic trip on the moon after what you did to me, you wretched, awful, disgusting, evil, putrid, ugly, wretched being. 
+                        i know i said wretched twice. that was on PURPOSE. YOU CRETIN!!!!</p>
+                </div>
+                <div ID="Email-3" STYLE="display:none">
+                    <h5><strong>FROM: </strong>Hannah</h5>
+                    <h6><strong>SUBJECT: </strong>Coffee :)</h6>
+                    <p>Heyyyy! I'm stopping by Mars this weekend and was wondering if you wanted to grab some coffee at Martian Cofferopolis! Let me know ;)</p>
+                </div>
+                <div ID="Email-4" STYLE="display:none">
+                    <h5><strong>FROM: </strong>Space Pig Weaponry</h5>
+                    <h6><strong>SUBJECT: </strong>Laser Blaster Damages Expenses (FINAL WARNING)</h6>
+                    <p>Dear Valued Customer, This is your final warning. If you don't pay your Space Pig Damage Fees, we'll be forced to send a team of the 
+                        Space Pig Force to your home. And yes, this is within our rights, as per the contract you signed cleary states. You have 5 hours. Regards, Space Pig Weaponry</p>
                 </div>
             </div>
         </div>

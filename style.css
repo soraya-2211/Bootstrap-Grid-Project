@@ -42,7 +42,132 @@ button {
     padding-top: 12px;
 }
 
-@media only screen and (max-device-width:425px){
+@media only screen and (max-device-width:425px){.container, html, body {
+    display: flex; /* Creating a flex layout context */
+    background-color: #3B3BF1;
+    padding: 2px;
+    flex-direction: row;
+    height: 100%;
+    min-width: 100%;
+}
+
+#spacepig {
+    color: #DFAEFF;
+    padding: 10px;
+}
+#spacepig-large {
+    color: #DFAEFF;
+    padding: 10px;
+}
+
+#inbox {
+    background-color: #DFAEFF;
+}
+
+.outer-panel1 {
+    width: 20%;
+    background-color: #00007E;
+}
+.outer-panel2{
+    background-color: #0000A2;
+}
+.outer-panel3{
+    width: 70%;
+    background-color: #DFAEFF;
+    color: #0000A2;
+    border-style: ridge;
+    border-color: #0000A2;
+    border-width: 20px;
+}
+
+.row {
+    padding: 1.5%;
+    margin: 3%;
+    background-color: #DFAEFF;
+    box-shadow: 1px 1px 10px #6965FF;
+    color: #3B3BF1;
+}
+
+BUTTON {
+    border-color: transparent;
+}
+
+.inner-panel1{
+    background-color: #6965FF;
+    box-shadow: 1px 1px 10px #6763FF;
+    margin: 13px;
+    padding: 1px;
+    text-align: center;
+    color: #0000A2;
+}
+
+.inner-panel2{
+    background-color: #6965FF;
+    box-shadow: 1px 1px 10px #6763FF;
+    margin: 13px;
+    padding: 1px;
+    text-align: left;
+    color: #0000A2;
+}
+.inner-panel2:focus{
+    cursor: pointer;
+    background-color: #DFAEFF;
+    box-shadow: 1px 1px 10px #6965FF;
+}
+
+BUTTON {
+    background: transparent;
+}
+
+.inner-panel3{
+    box-shadow: 1px 1px 10px #6763FF;
+    margin: 13px;
+    padding: 1px;
+    text-align: left;
+    color: #0000A2;
+}
+
+p {
+    font-size: 12px;
+}
+
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin: 2%;
+    border: 2px solid #1925C6;
+    text-align: center;
+    padding-top: 12px;
+}
+
+@media only screen and (max-device-width:375px){
+    .title-text{
+        padding-top: 5%;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .outer-panel1 {
+        display: flex;
+        flex-direction: row;
+        height: 8%;
+    }
+    .hidden-mobile {
+        display: none;
+      }
+}
+
+@media only screen and (max-device-width:820px){
+    img {
+        padding: 0px;
+        height: 10%;
+        width: auto;
+    }
+}
     .outer-panel {
         width: 100%;
         padding: 0% 3%;
